@@ -1,0 +1,114 @@
+{% extends 'core/base.html' %} {% load static %} {% block title %}Projects{% endblock title %} {% block content %}
+
+<div class="container mt-5">
+	<h1 class="text-primary mb-5 border-bottom">Projects</h1>
+
+    <div class="row mb-5">
+		<div class="col-md-6">
+			<div class="project-img">
+				<!--Zoom effect-->
+				<div class="view overlay zoom">
+					<img src="{% static 'core/images/todo.png' %}" class="img-fluid" alt="zoom" />
+				</div>
+			</div>
+		</div>
+        
+        <div class="col-md-6 text-white">
+            <h1>Todo App</h1>
+            <a href="#">Live Preview <i class="fa-solid fa-up-right-from-square ml-2" style="color: #ffffff;"></i></a>
+            <div>
+                <h3>
+                    Tech Used :
+                </h3>
+                <p>Python, Django, Html, Css, MDBootstrap, JavaScript, Sqlite3</p>
+            </div>
+            <div class="links">
+                <a href="#" class="btn btn-outline-light btn-sm">Source Code</a>
+                <a href="#" class="btn btn-outline-light btn-sm">Github Link</a>
+            </div>
+        </div>
+	</div>
+
+	<div class="row mb-5">
+		<div class="col-md-6">
+			<div class="project-img">
+				<!--Zoom effect-->
+				<div class="view overlay zoom">
+					<img
+						src="{% static 'core/images/netflix.png' %}"
+						class="img-fluid"
+						alt="zoom" />
+				</div>
+			</div>
+		</div>
+        
+        <div class="col-md-6 text-white">
+            <h1>Netflix Clone</h1>
+            <a href="#">Live Preview <i class="fa-solid fa-up-right-from-square ml-2" style="color: #ffffff;"></i></a>
+            <div>
+                <h3>
+                    Tech Used :
+                </h3>
+                <p>Python, Django, Html, Css, MDBootstrap, JavaScript, Sqlite3</p>
+            </div>
+            <div class="links">
+                <a href="#" class="btn btn-outline-light btn-sm">Source Code</a>
+                <a href="#" class="btn btn-outline-light btn-sm">Github Link</a>
+            </div>
+        </div>
+	</div>
+	<div class="row m-b-2">
+		<div class="col-md-6">
+			<div class="project-img">
+				<!--Zoom effect-->
+				<div class="view overlay zoom">
+					<img
+						src="{% static 'core/images/portfolio.png' %}"
+						class="img-fluid"
+						alt="zoom" />
+				</div>
+			</div>
+		</div>
+        <div class="col-md-6 text-white">
+            <h1>Portfolio Website</h1>
+            <a href="#">Live Preview <i class="fa-solid fa-up-right-from-square ml-2" style="color: #ffffff;"></i></a>
+            <div>
+                <h3>
+                    Tech Used :
+                </h3>
+                <p>Python, Django, Html, Css, MDBootstrap</p>
+            </div>
+            <div class="links">
+                <a href="#" class="btn btn-outline-light btn-sm">Source Code</a>
+                <a href="#" class="btn btn-outline-light btn-sm">Github Link</a>
+            </div>
+        </div>
+	</div>
+
+    <div class="row mt-5">
+		<div class="col-md-6">
+			<div class="project-img">
+				<!--Zoom effect-->
+				<div class="view overlay zoom">
+					<img src="{% static 'core/images/blog.png' %}" class="img-fluid" alt="zoom" />
+				</div>
+			</div>
+		</div>
+        
+        <div class="col-md-6 text-white">
+            <h1>Blog Website</h1>
+            <a href="#">Live Preview <i class="fa-solid fa-up-right-from-square ml-2" style="color: #ffffff;"></i></a>
+            <div>
+                <h3>
+                    Tech Used :
+                </h3>
+                <p>Python, Django, Html, Css, MDBootstrap, JavaScript, Sqlite3</p>
+            </div>
+            <div class="links">
+                <a href="#" class="btn btn-outline-light btn-sm">Source Code</a>
+                <a href="#" class="btn btn-outline-light btn-sm">Github Link</a>
+            </div>
+        </div>
+	</div>
+</div>
+{% endblock content %}

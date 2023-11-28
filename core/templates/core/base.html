@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>{% block title %}{% endblock title %}</title>
+		<link rel="icon" type="image/png" sizes="32x32" href="{% static 'core/images/android-chrome-512x512.png' %}" />
+		<!-- Css and Fontawesome and fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="{% static 'core/fonts/css/all.min.css' %}" />
+		<link rel="stylesheet" href="{% static 'core/css/bootstrap.css' %}" />
+		<link rel="stylesheet" href="{% static 'core/css/mdb.css' %}" />
+		{% block corecss %}
+		<link rel="stylesheet" href="{% static 'core/css/core.css' %}" />
+		{% endblock corecss %}
+	</head>
+	<body>
+		<div class="container-fluid bg-dark">
+			<div class="row">
+				<div class="col-md-2">
+					<!-- SideBar -->
+					{% include 'core/sidebar.html' %}
+				</div>
+
+				<div class="col-md-10">
+					<!-- Main Content -->
+					{% block content %} {% endblock content %}
+				</div>
+			</div>
+		</div>
+
+		<!-- Script Files -->
+		<script src="{% static 'core/js/jquery.js' %}"></script>
+		<script src="{% static 'core/js/popper.js' %}"></script>
+		<script src="{% static 'core/js/bootstrap.js' %}"></script>
+		<script src="{% static 'core/js/mdb.js' %}"></script>
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed('#element', {
+                strings: ['Python Full Stack Developer', 'Web Developer', 'Software Developer','Full Stack Web Developer'],
+                typeSpeed: 50,
+            });
+        </script>
+	</body>
+</html>

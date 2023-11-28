@@ -1,0 +1,97 @@
+.bg-dark{
+    background: linear-gradient(to right, #141e30, #243b55);
+}
+/* font */
+.st-font{
+    font-family: 'Shadows Into Light', cursive;
+}
+html,body{
+    height: 100%;
+}
+.container-fluid{
+    min-height: 100%;
+}
+.container>h1{
+    font-family: 'Shadows Into Light', cursive;
+}
+/* home */
+.btn-outline-primary:hover{
+    background-color: rgb(0, 147, 206) !important;
+    color: black !important;
+}
+.btn-outline-warning:hover{
+    background-color: rgb(243, 211, 0) !important;
+    color: black !important;
+}
+/* Services */
+.card{
+    border-color: none;
+}
+.bg-cdark{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.755), rgba(0, 44, 121, 0.598));
+    color: white;
+}
+.bg-cprimary{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.797), rgb(0, 65, 178));
+    color: white;
+}
+.bg-black{
+    background: linear-gradient(to right, black, #005109);
+    color: white;
+}
+button{
+    border-radius: 0 !important;
+}
+.brn{
+    border-radius: 0 !important;
+}
+.b-hvr:hover{
+    color: lime !important;
+}
+.i-color{
+    color: chartreuse;
+}
+.fs{
+    font-size: 19px;
+}
+.smoke{
+    color: rgb(171, 171, 171);
+}
+/* contact */
+input[type="submit"]:hover{
+   color: whitesmoke !important; 
+   box-shadow: -10px 10px 20px black;
+}
+
+/* sidebar */
+a.nav-link{
+    color: whitesmoke;
+}
+a.nav-link,a{
+    z-index: 10;
+}
+a.nav-link:hover{
+    color: black;
+    background-color: skyblue;
+}
+a.nav-link.active{
+    color: black;
+    background-color: rgb(0, 127, 177);
+    font-weight: bold;
+}
+
+#element{
+    color: gold;
+    font-size: 2em;
+}
+svg {
+	overflow: hidden;
+	vertical-align: middle;
+	position: absolute;
+	top: 247px;
+	left: -227px;
+	width: 100vw;
+}
+.h-100{
+    height: 100vh !important;
+}
